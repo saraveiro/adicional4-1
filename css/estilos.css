@@ -1,0 +1,201 @@
+@import url('normalize.css');
+/** BASIC */
+body {
+	margin: 0 auto;
+  /*
+  width:100%;
+  max-width: 1500px;
+  por los colores que tiene la página y la distribución es mejor dejarla a tamaño completo
+  */
+	font-family: 'Courier New', Courier, monospace;
+}
+/* este no hace falta ya que esa pseudo-clase es No visitado por el usuario
+body a:link{
+	color:black;
+}
+*/
+
+body p{
+	font: 0.8em;
+}
+
+body ul{
+	font: 0.8em;
+}
+
+/* para todos los enlaces */
+
+a {
+	color: #000000;
+}
+
+p a{
+	font-style: italic;
+}
+/* para el tamaño del texto */
+p, ol, ul {
+	font-size: 0.8em;
+}
+
+header {
+	background-color: lightgrey;
+	color:white;
+}
+
+header h2{
+	font-size:1em;
+}
+  
+nav{
+	width: 15%;
+	float:left;
+	text-align: center;
+	font-size: 1.5em;
+}
+ /* como afecta a todos los enlaces se pone directamente sobre a */
+a:hover {
+	text-decoration: none;
+	background-color: #000000;
+	color: #FFFFFF;
+}
+/*
+nav:link {
+	color:black;
+}*/
+/*
+sobre los ul no sobre los li
+nav ul li {
+	list-style:none;
+	text-decoration: none;;
+	margin-bottom:20px;
+}*/ 
+nav ul {
+	margin: 0em;
+	padding: 0em;
+	list-style: none;
+	text-align: center;
+	line-height: 3em;
+}
+
+/* para el tamaño de letra de los li */
+nav li {
+	font-size: 1.5em;
+}
+
+/* se aplica sobre el enlace no sobre el li 
+nav ul li:hover {
+	list-style:none;
+	text-decoration: none;
+	background-color: #a9a9a9;
+	color:white;
+}*/
+nav a:hover {
+	text-decoration: none;
+	background-color: #a9a9a9;
+	color: #FFFFFF;
+}
+
+nav ul li {
+	list-style:none;
+	color:black;
+}
+#content {
+	width: 70%;
+	height: 90%;
+	float: right;
+}
+  
+#content #principal{
+	text-align: center;
+  }
+/*  ya que es el mismo para el resto lo ponemos arriba para todo 
+#content a:hover {
+	background-color: black;
+	color: white
+  }
+  #content p a:link {
+	font-style: italic;
+  }
+ 
+ */ 
+#content ul{
+	list-style-type: circle;
+}
+
+#content p{
+	text-align: justify;
+}
+  
+footer {
+	width:100%;
+	height:5%;
+	background-color: lightgrey;
+	clear: both;
+}
+footer p {
+	font-weight:bold;
+}
+  
+#copyright{
+  float: left;
+  /* falta indicar el ancho*/
+  }
+  /* como ves css y css2 tienes la misma regla por lo tanto en lugar de usar el id se usa un class
+  ya que el id es único peero el class no 
+  
+  #css{
+	float:right;
+  }
+  
+  #css2{
+  float:right;
+  }
+  
+  */
+.pie_derecha {
+    float: right;
+}
+#css1{
+  float:left;
+}
+  
+  
+  
+ /* al ser las reglas igual para todos los tipos de título solo se pone una vez  
+  h1{
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  }
+  h2{
+	font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  }
+  h3{
+	font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  }
+  h4{
+	font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  }
+  h5{
+	font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  }
+  h6{
+	font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  }
+  */
+h1, h2, h3, h4, h5, h6 {
+    margin: 0em;
+    padding: 0em;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+/*
+p{
+	font-size: 0.8em;
+}
+ul{
+	font-size: 0.8em;
+  }
+  */
+  
+  
+  
+  
+  
